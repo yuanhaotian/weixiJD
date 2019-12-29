@@ -1,0 +1,23 @@
+/* pages/list/index.wxss */
+/* list start */
+#list .listBox{
+  display:flex;
+  height:200rpx;
+}
+#list .listBox .imgL{
+  flex:1 1 130rpx;
+  height:180rpx;
+  margin-top:10rpx;
+}
+#list .listBox .imgL image{
+  display:block;
+  width:130rpx;
+  height:180rpx;
+  margin:10rpx auto 0;
+}
+#list .listBox  .descR{
+  flex:5 5 ;
+  font-size:28rpx;
+  border-bottom:1rpx solid rgb(199, 197, 197);
+}
+/* list end */

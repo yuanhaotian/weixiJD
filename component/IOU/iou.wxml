@@ -1,0 +1,22 @@
+<!--component/IOU/iou.wxml-->
+<view class="iouBox" catchtap='hideIou' data-target="iouSelf" wx:if="{{hideIou}}"><!--hideIou 判断隐藏还是显示-->
+  <view class="iou">
+    <view class="title">
+      <text>打白条购买</text>
+      <image class="closePng" catchtap='hideIou' data-target="iouSelf" src="/image/classify/close.png" mode="widthFix"></image>
+    </view>
+    <view class="iouDes" wx:for="{{iouData}}" wx:for-index="index" wx:key="item">
+      <view class="circle" catchtap='iscorrent' data-index="{{index}}">
+        <view class="box">
+          <image class="img" src="/image/classify/corrent.png" wx:if="{{item.select}}"></image>
+        </view>
+      </view>
+      <view class="text">
+        <view class="textDes">{{item.desc}}</view>
+        <view class="textDes">{{item.tip}}</view>
+      </view>
+    </view>
+    <view class="btn" catchtap='makeIou' data-target="makeSelf">立即打白条</view>
+  </view>
+
+</view>

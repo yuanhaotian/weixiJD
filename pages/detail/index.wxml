@@ -1,0 +1,41 @@
+<!--pages/detail/index.wxml-->
+<view id="page">
+  <!--轮播图 -->
+  <view id="banner">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true" indicator-color="#fff" indicator-active-color="grey" >
+      <block wx:for="{{partData.loopImgUrl}}" wx:key="{{index}}">
+        <swiper-item>
+          <image class="images" src="{{item}}" mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view id="des">
+    <view class="desTxt">{{partData.title}}</view>
+    <view class="pay" wx:if="{{partData.price}}">￥{{partData.price}}元</view>
+  </view>
+  <view id="baitiao">
+    <infocell title='支付' desc="{{desc}}" bind:popView='popBaitiaoView'></infocell>
+    <infocell title='已选' desc="{{count}}件" count="{{count}}" bind:popView='showAdd'></infocell>
+  </view> 
+  <!-- cart start -->
+  <view id="cart">
+    <view class="shop"  catchtap="showCart">
+      <image class="cartImg" src="/image/classify/cart.png" mode="widthFix"></image>
+      <view class="text">购物车</view>
+      <view class="count" wx:if="{{allCount}}">{{allCount}}</view>
+    </view>
+    <view class="add" catchtap='addEvent'>加入购物车</view>
+    <!-- count是小图标，右上角数量 -->
+  </view>
+  <!-- cart end -->
+  <!-- iou start -->
+  <iou iouData="{{baitiao}}" wx:if="{{IouHide}}" hideIou="{{IouHide}}" bind:updataSelect="updataSelect"></iou>
+  <!-- iou end -->
+  <!-- cart组件 start -->
+  <cart wx:if="{{cartHide}}"></cart>
+  <!-- cart组件 end -->
+  <!-- add组件 start   partData子组件图片，商品数量上限判断 -->
+  <add wx:if="{{addHide}}" partData="{{partData}}" hideAdd="{{addHide}}" count="{{count}}" bind:getCount="getCount"></add>
+  <!-- add组件 end -->
+</view>

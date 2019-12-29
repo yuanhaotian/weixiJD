@@ -1,0 +1,53 @@
+/* pages/category/index.wxss */
+/* navL start */
+#navL{
+  float:left;
+  width:180rpx;
+  background-color: pink;
+}
+#navL .text{
+  width:100%;
+  height:100rpx;
+  background-color:#fbf9fe;
+  font-size:30rpx;
+  line-height:100rpx;
+  text-align:center;
+}
+#navL .on{
+  background-color:#fff;
+  color:red;
+}
+/* navL end */
+/* contentR start */
+#contentR{
+  float:left;
+  width:570rpx;
+}
+#contentR .wrap{
+  width:100%;
+  font-size:30rpx;
+}
+#contentR .wrap .title{
+  height:100rpx;
+  background-color:#fff;
+  font-weight:700;
+  line-height:100rpx;
+}
+#contentR .wrap .imgBox{
+  overflow: hidden;
+  width:100%;
+}
+#contentR .wrap .imgBox image{
+  display:block;
+  width:100%;
+}
+#contentR .wrap .msg{
+  float:left;
+  width:32.8%;
+  height:230rpx;
+}
+#contentR .wrap .msg .desc{
+  display: block;
+  text-align:center;
+}
+/* contentR end */

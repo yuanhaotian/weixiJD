@@ -1,0 +1,19 @@
+<!--pages/category/index.wxml-->
+<view id="page">
+  <view id="navL">
+    <scroll-view scroll-y>
+      <view class="text {{index===curIndex? 'on' : ''}}" wx:for="{{navLeftItems}}" wx:for-index="index" wx:key="item" bindtap="chgeIndex" data-index="{{index}}" >{{item}}</view>
+    </scroll-view>  
+  </view>
+  <view id="contentR">
+    <view class="wrap" wx:for="{{navRightItems[curIndex]}}"  wx:for-index="index" wx:key="item">
+      <view class="title">{{item.title}}</view>
+      <view class="imgBox">
+        <view class="msg" wx:for="{{item.desc}}" wx:for-index="index" wx:key="item" bindtap="goTo" data-txt="{{item.text}}" >
+          <image src="{{item.img}}" mode="widthFix"></image>
+          <text class="desc">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

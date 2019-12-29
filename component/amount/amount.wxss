@@ -1,0 +1,37 @@
+/* component/amount/amount.wxss */
+/* .amount{
+  height:100rpx; */
+  /* padding:0 40
+}
+/* .num{
+  float:left;
+  width:100rpx;
+  height:100%;
+  line-height:100rpx;
+  font-size:32rpx;
+} */
+.aReduce{
+  float:right;
+  display:flex;
+  align-items:center;
+  width:300rpx;
+  height:100%;
+  text-align:center;
+}
+.aReduce .addBtn{
+  flex:1 1 ;
+  height:65rpx;
+  background-color:rgb(223, 219, 219);
+  line-height:65rpx;
+}
+.aReduce .num{
+  flex:1 1 ;
+  height:65rpx;
+  line-height:65rpx;
+}
+.aReduce .reduceBtn{
+  flex:1 1 ;
+  height:65rpx;
+  background-color:rgb(223, 219, 219);
+  line-height:65rpx;
+}

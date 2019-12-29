@@ -1,0 +1,53 @@
+<!--pages/home/index.wxml-->
+<view id="page">
+  <view id="header">
+    <view class="icon">
+      <image src="../../image/home/ai3.png" mode="widthFix"></image>
+    </view>
+    <view class="inputBox">
+      <image src="../../image/home/ati.png" mode="widthFix"></image>
+      <input class="inputs" placeholder="请输入搜索内容"></input>
+    </view>
+    <view class="icon">
+      <image src="../../image/home/ahv.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view id="banner">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true" indicator-color="#fff" indicator-active-color="grey" >
+      <block wx:for="{{bannerUrl}}" wx:key="{{index}}">
+        <swiper-item>
+          <image class="images" src="{{item}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view id="sIcon">
+    <view class="iconBox" wx:for="{{log}}" wx:for-index="index" wx:key="item">
+      <image src="{{item.image}}" mode="widthFix"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view id="swiper">
+    <view class="title">
+      <image src="../../image/home/bej.png" mode="widthFix"></image>
+      <text class="more">更多秒杀></text> 
+    </view> 
+    <scroll-view class="scroll" scroll-x="true">
+      <view class="content" wx:for="{{quicks}}" wx:key="{{index}}">
+        <image src="{{item.image}}"></image>
+        <view class="price">{{item.price}}</view>
+      </view>
+    </scroll-view>
+  </view>
+  <view id="imgBox"><!--应该是分两类，没有数据-->
+    <view class="imgRow">
+      <image src="../../image/home/ad-0.jpg"></image>
+      <image src="../../image/home/ad-big.jpg"></image>
+      <image src="../../image/home/ad-1.jpg"></image>
+    </view>
+    <view class="imgRow">
+      <image src="../../image/home/ad-left.jpg"></image>
+      <image src="../../image/home/ad-right.jpg"></image>
+    </view>
+  </view>
+</view>

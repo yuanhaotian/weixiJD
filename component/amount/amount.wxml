@@ -1,0 +1,6 @@
+<!--component/amount/amount.wxml-->
+<view class="aReduce">
+  <view class="addBtn" catchtap='addNum'>+</view>
+  <view class="num">{{count}}</view>  
+  <view class="reduceBtn" catchtap='ReduceNum'>-</view>
+</view>

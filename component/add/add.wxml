@@ -1,0 +1,24 @@
+<!--component/add/add.wxml-->
+<view class="add" catchtap='closeAdd' data-name="addSelf" wx:if="{{hideAdd}}">
+  <view class="wrap">
+    <view class="desc">
+      <view class="imgBox">
+        <image class="imgDesc" src="{{partData.loopImgUrl[0]}}" mode="widthFix"></image>
+      </view>
+      <view class="pay">
+        <view class="cost payText">￥{{partData.price}}元</view>
+        <view class="count payText">已选{{count}}件</view>
+      </view>
+      <view class="close" >
+        <image class="closeImg" src="/image/classify/close.png" data-name="addSelf" wx:if="{{hideAdd}}"></image>
+      </view>
+    </view>
+    <!-- amount组件  total父组件传来，做添加商品数量上限判断-->
+    <view class="countCompont">
+      <view class="num">数量</view>
+      <amount class="amount" count="{{count}}" total="{{partData.count}}" bind:getCount="getCount"></amount>
+    </view>
+    <!-- amount组件 -->
+    <view class="btn" catchtap='addcount'>加入购物车</view>
+  </view>
+</view>

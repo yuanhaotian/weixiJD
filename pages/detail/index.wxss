@@ -1,0 +1,95 @@
+/* pages/detail/index.wxss */
+#page{
+  background-color:#fbf9fe;
+  padding-bottom:100rpx;
+}
+/* banner start */
+#banner{
+  height:820rpx;
+}
+#banner swiper,swiper-item{
+  height:100%;
+}
+#banner .images{
+  display:block;
+  width:750rpx;
+  height:820rpx;
+  margin:0 auto;
+}
+/* banner end */
+/* des start */
+#des .desTxt{
+  padding:20rpx 20rpx;
+  font-size:30rpx; 
+}
+#des .pay{
+  padding:20rpx 20rpx 10rpx;
+  font-size:34rpx;
+  color:red;
+  font-weight:700;
+}
+/* des end */
+/* cart start */
+#cart{
+  position:fixed;
+  bottom:0; 
+  width:100%;
+  height:100rpx;
+  background-color:#fff;
+  border-top:1rpx solid rgb(145, 144, 144);
+  margin-top:30rpx;
+  font-size:34rpx;
+  text-align: center;
+  line-height:100rpx;
+  /* fixed和flex冲突，用浮动 */
+}
+#cart .shop{
+  position:realtive;
+  float:left;
+  width:50%;
+  height:100%;
+  font-size:25rpx;
+}
+#cart .shop .cartImg{
+  display:block;
+  width:60rpx;
+  height:60rpx;
+  margin:5rpx auto 0;
+}
+#cart .shop .text{
+  font-size:25rpx;
+  line-height:25rpx;
+}
+#cart .add{
+  float:left;
+  width:50%;
+  height:100%;
+  background-color:#ee2b2f;
+  color:#fff;
+}
+#cart .count{
+  position:absolute;
+  top:5rpx;
+  left:193rpx;
+  z-index:10;
+  width:30rpx;
+  height:30rpx;
+  border:2rpx solid grey;
+  background-color:#fff;
+  border-radius:50%;
+  color:red;
+  font-size:28rpx;
+  line-height:30rpx;
+  text-align:center;
+}
+/* cart end */
+/* iou start */
+#iou{
+  position:fixed;
+  bottom:0;
+  z-index:100;
+  width:100%;
+  padding:20rpx 0;
+  background-color:pink;
+}
+/* iou end */

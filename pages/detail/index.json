@@ -1,0 +1,8 @@
+{
+  "usingComponents":{
+    "infocell":"/component/baitiao/baitiao",
+    "iou": "/component/IOU/iou",
+    "cart":"/component/cart/cart",
+    "add":"/component/add/add"
+  }
+}

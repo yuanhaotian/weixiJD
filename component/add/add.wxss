@@ -1,0 +1,75 @@
+/* component/add/add.wxss */
+.add{
+  position:fixed;
+  bottom:0;
+  z-index:100;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.4);
+}
+.add .wrap{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background-color:#fff;
+}
+.add .wrap .desc{
+  display:flex;
+  height:160rpx;
+}
+.add .wrap .desc .imgBox{
+  position:relative;
+  flex:10 10;
+}
+.add .wrap .desc .imgBox .imgDesc{
+  position:absolute;
+  right:0;
+  top:-15rpx;
+  width:160rpx;
+  height:160rpx;
+}
+.add .wrap .desc .pay{
+  flex:25 25;
+}
+.add .wrap .countCompont{
+  padding:0 40rpx;
+  margin:40rpx 0;
+  height:100rpx;
+}
+.add .wrap .countCompont .num{
+  float:left;
+  width:100rpx;
+  height:100%;
+  line-height:100rpx;
+  font-size:32rpx;
+}
+.add .wrap .desc .pay .payText{
+  padding-left:20rpx;
+  line-height:73rpx;
+}
+.add .wrap .desc .pay .cost{
+  color:red;
+}
+.add .wrap .desc .pay .count{
+  font-size:30rpx;
+  color:grey;
+}
+.add .wrap .desc .close{
+  flex:2 2;
+}
+.add .wrap .desc .close .closeImg{
+  display:block;
+  width:30rpx;
+  height:30rpx;
+  margin:65rpx auto 0;
+}
+.add .wrap .btn{ 
+  width:100%;
+  height:90rpx;
+  margin-top:60rpx;
+  background-color:#ee2b2f;
+  font-size:30rpx;
+  color:#fff;
+  text-align:center;
+  line-height:80rpx;
+}

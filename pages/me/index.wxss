@@ -1,0 +1,23 @@
+/* pages/me/index.wxss */
+page{
+  width:100%;
+  height:100%;
+}
+.userinfo{
+  display:flex;
+  height:100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
+.btn{
+  padding:5rpx 30rpx;
+  border:1px solid grey;
+}
+.userinfo .avatar{
+  width:500rpx;
+  border-radius:50%;
+}
+.userinfo .nickname{
+  line-height:70rpx;
+}

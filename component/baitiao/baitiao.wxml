@@ -1,0 +1,7 @@
+<!--component/baitiao.wxml-->
+<view class="baitiao">
+  <view class="title">{{title}}</view>
+  <view class="desc">{{desc}}</view>
+  <view class="point" bindtap="popView">...</view>
+</view>
+
